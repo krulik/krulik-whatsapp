@@ -5,7 +5,7 @@ export function getChatUsersList(chat, usersContext) {
   }).join(', ');
 }
 
-const API_URL = 'https://whatsapp-server-zlilyoffe.herokuapp.com';
+const API_URL = 'https://krulik-whatsapp-server.herokuapp.com/api';
 
 export let get = (route) => fetch(`${API_URL}/${route}`, {
   credentials: 'include',
