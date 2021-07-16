@@ -5,7 +5,7 @@ export function getChatUsersList(chat, usersContext) {
   }).join(', ');
 }
 
-const API_URL = 'https://krulik-whatsapp-server.herokuapp.com/api';
+const API_URL = process.env.REACT_APP_API_URL;
 
 export let get = (route) => fetch(`${API_URL}/${route}`, {
   credentials: 'include',

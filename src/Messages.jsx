@@ -12,7 +12,7 @@ export function Messages(props) {
   }
   return <ul>
       {props.messages.map(message => {
-        let fullUser = props.usersContext.allUsers[message.author._id] || {};
+        let fullUser = props.usersContext.allUsers[message.author?._id] || {};
         return <Message key={message._id}>
           <p>{fullUser.userName}: {message.text}</p>
         </Message>;
